@@ -11,4 +11,45 @@ body {
   padding: 0;
 }
 
+body {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: #F5F5F5;
+}
+
+header {
+  font-size: 12px;
+  color: #F5F5F5;
+}
+
+header {
+  background-color: #AED6E2;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+.menu {
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.menu li {
+  padding: 10px;
+}
+.menu li > a {
+  text-decoration: none;
+  color: grey;
+}
+
+#signup {
+  background-color: lightgray;
+}
+
 /*# sourceMappingURL=style.css.map */

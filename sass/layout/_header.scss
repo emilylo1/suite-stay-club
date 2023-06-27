@@ -1,0 +1,26 @@
+header{
+    background-color: $color-primary;
+    font-size: 12px;
+
+    @include flex-center (row);
+}
+
+.menu{
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    padding: 0;
+
+    li{
+        padding: 10px;
+        
+        &>a{
+            text-decoration: none;
+            color: grey;
+        }
+    }
+}
+
+#signup{
+    background-color: lightgray;
+}
