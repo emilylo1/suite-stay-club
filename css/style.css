@@ -27,6 +27,33 @@ body {
   padding: 10px;
 }
 
+.search {
+  width: 50%;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+.search__term {
+  width: 100%;
+  border: 2px solid darkgrey;
+  border-right: none;
+  padding: 5px;
+  outline: none;
+  color: white;
+}
+.search__term:focus {
+  color: black;
+}
+.search__button {
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  background-color: darkgray;
+  color: white;
+  border: 2px solid darkgray;
+  width: 10%;
+}
+
 header {
   background-color: #AED6E2;
   font-size: 12px;
