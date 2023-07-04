@@ -10,3 +10,51 @@
         height: 50px;
     }
 }
+
+.hotel-cards-wrapper{
+    display: flex;
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.cards{
+    @include flex-basic (column);
+    width: 45%;
+    margin: auto;
+    color: grey;
+    @include box-shadow-cards;
+
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        height: 25vh;
+    }
+
+    &__subtitle{
+        margin: 10px 0 0 10px;
+    }
+
+    &__hotel{
+        flex: 45%;
+        margin: 10px 0 10px 10px;
+    }
+
+    &__capacity{
+        flex: 45%;
+        text-align: end;
+        margin: 10px 10px 10px 0;
+    }
+
+    &__price{
+        align-self: flex-end;
+        background-color: darkgray;
+        color: white;
+        margin: 0 10px 10px 0;
+    }
+}
+
+.cards-text-wrap{
+    @include flex-basic (row);
+}

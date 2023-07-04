@@ -5,3 +5,13 @@
     text-align: center;
     flex-direction: $direction;
 }
+
+@mixin flex-basic ($direction){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+}
+
+@mixin box-shadow-cards{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
