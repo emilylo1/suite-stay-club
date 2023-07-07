@@ -15,3 +15,16 @@
 @mixin box-shadow-cards{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
+
+@mixin orange-btn{
+    color: white;
+    background-color: $color-tertiary;
+    padding: 10px 40px;
+    border: none;
+}
+
+@mixin highlight-boxes{
+    color: white;
+    background-color: black;
+    border: solid 1px black;
+}

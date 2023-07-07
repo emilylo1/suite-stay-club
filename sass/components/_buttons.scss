@@ -9,3 +9,9 @@
         cursor: pointer;
     }
 }
+
+.property-page{
+    &__prices{
+       @include orange-btn; 
+    }
+}
