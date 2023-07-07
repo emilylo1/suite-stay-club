@@ -19,3 +19,9 @@
 #form-wrapper__btn{
     @include orange-btn;
 }
+
+.welcome-content__coming{
+    @include orange-btn;
+    display: block;
+    margin: auto;
+}

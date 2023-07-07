@@ -47,6 +47,15 @@ h1, h2, h3 {
   border: none;
 }
 
+.welcome-content__coming {
+  color: white;
+  background-color: #D07D1B;
+  padding: 10px 40px;
+  border: none;
+  display: block;
+  margin: auto;
+}
+
 .search-container {
   margin: 20px;
 }
