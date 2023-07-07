@@ -19,7 +19,7 @@ body {
   background-color: #F5F5F5;
 }
 
-h2, h3 {
+h1, h2, h3 {
   font-family: "space grotesk", sans-serif;
   text-align: center;
 }
@@ -34,6 +34,13 @@ h2, h3 {
 }
 
 .property-page__prices {
+  color: white;
+  background-color: #D07D1B;
+  padding: 10px 40px;
+  border: none;
+}
+
+#form-wrapper__btn {
   color: white;
   background-color: #D07D1B;
   padding: 10px 40px;
@@ -281,6 +288,66 @@ header {
 
 .destination-and-location {
   text-align: center;
+}
+
+main {
+  text-align: center;
+}
+
+.booking {
+  text-align: center;
+}
+.booking__img {
+  width: 50%;
+}
+
+.booking-details-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.booking-details {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.form-wrapper__name > input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.form-wrapper__details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.form-wrapper__details > input {
+  margin: 10px;
+  padding: 5px;
+  width: 330px;
+}
+.form-wrapper__checkbox {
+  display: inline-flex;
+}
+.form-wrapper__checkbox > .check {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

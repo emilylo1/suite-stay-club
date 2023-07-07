@@ -1,0 +1,58 @@
+main{
+    text-align: center;
+}
+
+.booking{
+    text-align: center;
+
+    &__img{
+        width: 50%;
+    }
+}
+
+.booking-details-wrapper{
+    @include flex-basic (row);
+    justify-content: space-around;
+}
+
+.booking-details{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.form{
+    @include flex-basic (row);
+    justify-content: center;
+}
+
+.form-wrapper{
+    @include flex-center (column);
+
+    &__name{
+        
+        >input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    }
+
+    &__details{
+        @include flex-basic (column);
+        align-items: center;
+        
+        >input{
+            margin: 10px;
+            padding: 5px;
+            width: 330px;
+        }
+    }
+
+    &__checkbox{
+        display: inline-flex;
+        
+        >.check{
+            margin: 10px;
+        }
+    }
+}
