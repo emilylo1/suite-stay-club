@@ -24,6 +24,10 @@ h1, h2, h3 {
   text-align: center;
 }
 
+h4 {
+  font-weight: 600;
+}
+
 .welcome-content__button {
   color: white;
   background-color: black;
@@ -68,7 +72,7 @@ h1, h2, h3 {
 }
 .search__term {
   width: 100%;
-  border: 2px solid darkgrey;
+  border: 2px solid #524C4C;
   border-right: none;
   padding: 5px;
   outline: none;
@@ -81,9 +85,9 @@ h1, h2, h3 {
   cursor: pointer;
   font-size: 20px;
   text-align: center;
-  background-color: darkgray;
+  background-color: #524C4C;
   color: white;
-  border: 2px solid darkgray;
+  border: 2px solid #524C4C;
   width: 10%;
 }
 
@@ -95,6 +99,9 @@ header {
   align-items: center;
   text-align: center;
   flex-direction: row;
+}
+header img {
+  margin-right: 20px;
 }
 
 .menu {
@@ -108,7 +115,7 @@ header {
 }
 .menu li > a {
   text-decoration: none;
-  color: grey;
+  color: #524C4C;
 }
 
 #signup {
@@ -131,10 +138,11 @@ header {
 
 .hotel-cards-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   background-color: white;
   width: 95%;
   margin: auto;
-  padding: 20px 0;
 }
 
 .cards {
@@ -143,7 +151,9 @@ header {
   flex-direction: column;
   width: 45%;
   margin: auto;
-  color: grey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #524C4C;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 .cards__img {
@@ -165,7 +175,7 @@ header {
 }
 .cards__price {
   align-self: flex-end;
-  background-color: darkgray;
+  background-color: #524C4C;
   color: white;
   margin: 0 10px 10px 0;
 }
@@ -296,10 +306,6 @@ header {
 }
 
 .destination-and-location {
-  text-align: center;
-}
-
-main {
   text-align: center;
 }
 

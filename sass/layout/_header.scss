@@ -3,6 +3,10 @@ header{
     font-size: 12px;
 
     @include flex-center (row);
+
+    & img{
+        margin-right: 20px;
+    }
 }
 
 .menu{
@@ -16,7 +20,7 @@ header{
         
         &>a{
             text-decoration: none;
-            color: grey;
+            color: $color-grey;
         }
     }
 }

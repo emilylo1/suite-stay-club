@@ -10,3 +10,7 @@ h1, h2, h3{
     font-family: $font-titles;
     text-align: center;
 }
+
+h4{
+    font-weight: map-get($font-weight-main, semi-bold);
+}

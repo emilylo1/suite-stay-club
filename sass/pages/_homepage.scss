@@ -14,18 +14,19 @@
 }
 
 .hotel-cards-wrapper{
-    display: flex;
+    @include flex-basic (row);
     background-color: white;
     width: 95%;
     margin: auto;
-    padding: 20px 0;
 }
 
 .cards{
     @include flex-basic (column);
     width: 45%;
     margin: auto;
-    color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $color-grey;
     @include box-shadow-cards;
 
     &__img{
@@ -51,7 +52,7 @@
 
     &__price{
         align-self: flex-end;
-        background-color: darkgray;
+        background-color: $color-grey;
         color: white;
         margin: 0 10px 10px 0;
     }
