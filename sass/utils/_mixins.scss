@@ -28,3 +28,29 @@
     background-color: black;
     border: solid 1px black;
 }
+
+@mixin contact-icons{
+    background-color: $color-grey;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    margin: 10px 15px;
+}
+
+@mixin social-icons{
+    color: white;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: $color-grey;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 5px;
+    display: inline-block;
+}

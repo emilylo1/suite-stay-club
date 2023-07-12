@@ -1,0 +1,58 @@
+footer{
+    background-color: $color-primary;
+    font-size: 12px;
+    color: $color-grey;
+    @include flex-basic (row);
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.footer-left{
+    flex-basis: 40%;
+
+    &__links{
+
+        & a{
+            text-decoration: none;
+            color: $color-grey;
+            border-right: solid 1px $color-grey;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+    }
+
+    &__copyright{
+        padding-left: 5px;
+        margin-top: 20px;
+    }
+}
+
+.footer-center{
+    flex-basis: 35%;
+
+    & i{
+        @include contact-icons;
+    }
+
+    & p{
+        display: inline-block;
+    }
+}
+
+.footer-right{
+    flex-basis: 25%;
+
+    &__about span{
+        display: block;
+        font-weight: map-get($font-weight-main, semi-bold);
+        margin-bottom: 20px;
+    }
+
+    &__icons{
+        margin-top: 25px;
+        
+        & a{
+            @include social-icons;
+        }
+    }
+}
