@@ -166,6 +166,10 @@ footer {
 .footer-center p {
   display: inline-block;
 }
+.footer-center p a {
+  text-decoration: none;
+  color: #524C4C;
+}
 
 .footer-right {
   flex-basis: 25%;
