@@ -22,6 +22,8 @@
 
 #form-wrapper__btn{
     @include orange-btn;
+    margin: 10px 0 20px 0;
+    text-decoration: none;
 }
 
 .welcome-content__coming{

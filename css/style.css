@@ -19,12 +19,16 @@ body {
   background-color: #F5F5F5;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: "space grotesk", sans-serif;
   text-align: center;
 }
 
-h4 {
+h3, h4 {
+  font-weight: 600;
+}
+
+.bold {
   font-weight: 600;
 }
 
@@ -53,6 +57,8 @@ h4 {
   background-color: #9A7E28;
   padding: 10px 40px;
   border: none;
+  margin: 10px 0 20px 0;
+  text-decoration: none;
 }
 
 .welcome-content__coming {
@@ -389,11 +395,17 @@ footer {
   text-align: center;
 }
 
+.body-main {
+  background-color: white;
+}
+
 .booking {
   text-align: center;
+  margin: 20px 0;
 }
 .booking__img {
-  width: 50%;
+  width: 40%;
+  margin: 10px;
 }
 
 .booking-details-wrapper {
@@ -401,11 +413,23 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  background-color: #F5F5F5;
+  line-height: initial;
 }
 
 .booking-details {
-  flex-basis: 50%;
+  flex-basis: 45%;
   text-align: center;
+}
+
+.confirmation-help {
+  text-align: center;
+}
+.confirmation-help a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 
 .form {
@@ -421,11 +445,15 @@ footer {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  background-color: #F5F5F5;
+  border: 2px solid #3F6064;
+  margin: 20px;
 }
 .form-wrapper__name > input {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;
+  outline-color: #9D3636;
 }
 .form-wrapper__details {
   display: flex;
@@ -437,12 +465,21 @@ footer {
   margin: 10px;
   padding: 5px;
   width: 330px;
+  outline-color: #9D3636;
 }
 .form-wrapper__checkbox {
   display: inline-flex;
 }
+.form-wrapper__checkbox input[type=checkbox] {
+  accent-color: #9D3636;
+}
 .form-wrapper__checkbox > .check {
   margin: 10px;
+}
+
+.details {
+  font-size: 12px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
