@@ -1,6 +1,7 @@
 header{
     background-color: $color-primary;
     font-size: 12px;
+    padding: 10px;
 
     @include flex-center (row);
 
