@@ -10,6 +10,10 @@
     }
 }
 
+#waitlist{
+    padding: 9px 142px;
+}
+
 .property-page{
     &__prices{
        @include orange-btn; 
@@ -24,4 +28,5 @@
     @include orange-btn;
     display: block;
     margin: auto;
+    padding: 10px 150px;
 }

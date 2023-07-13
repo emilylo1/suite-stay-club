@@ -37,27 +37,32 @@ h4 {
   cursor: pointer;
 }
 
+#waitlist {
+  padding: 9px 142px;
+}
+
 .property-page__prices {
   color: white;
-  background-color: #D07D1B;
+  background-color: #9A7E28;
   padding: 10px 40px;
   border: none;
 }
 
 #form-wrapper__btn {
   color: white;
-  background-color: #D07D1B;
+  background-color: #9A7E28;
   padding: 10px 40px;
   border: none;
 }
 
 .welcome-content__coming {
   color: white;
-  background-color: #D07D1B;
+  background-color: #9A7E28;
   padding: 10px 40px;
   border: none;
   display: block;
   margin: auto;
+  padding: 10px 150px;
 }
 
 .search-container {
