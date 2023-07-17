@@ -6,16 +6,19 @@
 .property-page{
     @include flex-center (column);
     width: 50%;
+    padding: 20px;
 }
 
 .property-detail{
     @include flex-basic (column);
     justify-content: center;
     width: 50%;
+    padding: 20px;
 }
 
 .hotel-highlights-wrapper{
     @include flex-basic (row);
+    background-color: white;
 }
 
 .box-wrapper{
@@ -26,6 +29,7 @@
 .hotel-highlights{
     flex-basis: 50%;
     text-align: center;
+    padding: 20px;
 
     &__boxes{
         flex-basis: 30%;
@@ -34,6 +38,18 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    &__more{
+        margin-top: 0;
+
+        & a{
+            text-decoration: none;
+            color: black;
+            font-weight: map-get($font-weight-main, semi-bold);
+        }
     }
 }
 
@@ -41,6 +57,7 @@
     display: flex;
     justify-content: center;
     flex-basis: 50%;
+    padding: 20px;
 
     >iframe{
         border: none;
@@ -50,20 +67,30 @@
 
 #detail-text{
     text-align: center;
+    padding: 20px;
 }
 
 .details-wrapper{
     @include flex-center (row);
     align-items: flex-start;
+    padding: 20px;
 }
 
 .details{
     flex-basis: 25%;
+
+    &__link{
+        text-decoration: none;
+        color: black;
+        font-weight: map-get($font-weight-main, semi-bold);
+        font-size: 12px;
+    }
 }
 
 .included-wrapper{
     @include flex-basic (row);
     flex-wrap: nowrap;
+    padding: 20px;
 }
 
 .included-image{
@@ -74,14 +101,33 @@
 .included{
     flex-basis: 50%;
     @include flex-center (column);
+    justify-content: space-between;
+
+    &__heading{
+        margin-bottom: 5px;
+    }
+
+    &__detail{
+        margin: 0;
+    }
 }
 
-.restaurants-and-bars-wrapper{
+.restaurants-and-activities{
+    padding: 20px;
+    background-color: white;
+}
+
+.restaurants-and-activities-wrapper{
     @include flex-basic (row);
     justify-content: space-around;
+
+    & h4{
+        margin: 5px;
+        font-weight: map-get($font-weight-main, light);
+    }
 }
 
-.restaurant-cards{
+.property-cards{
     flex-basis: 30%;
 
     &__img{
@@ -97,4 +143,16 @@
 
 .destination-and-location{
     text-align: center;
+    padding: 20px;
+
+    & h2{
+        margin-bottom: 5px;
+    }
+
+    & a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: map-get($font-weight-main, semi-bold);
+    }
 }
