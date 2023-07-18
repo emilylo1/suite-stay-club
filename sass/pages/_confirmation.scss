@@ -15,7 +15,7 @@
     @include flex-basic (row);
     justify-content: space-around;
     align-items: center;
-    background-color: $color-secondary;
+    background-color: $color-background;
     line-height: initial;
 }
 
@@ -41,8 +41,8 @@
 
 .form-wrapper{
     @include flex-center (column);
-    background-color: $color-secondary;
-    border: 2px solid $color-blue;
+    background-color: $color-background;
+    border: 3px solid $color-primary;
     margin: 20px;
 
     &__name{

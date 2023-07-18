@@ -12,6 +12,16 @@
     }
 }
 
+.about-suite-stay-wrapper{
+    @include flex-basic (row);
+    flex-wrap: nowrap;
+}
+
+.icons-wrapper{
+    padding: 20px;
+    flex-basis: 25%;
+}
+
 .hotel-cards-wrapper{
     @include flex-basic (row);
     background-color: white;
@@ -26,7 +36,7 @@
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: $color-grey;
+    color: $color-secondary;
     @include box-shadow-cards;
 
     &__img{
@@ -52,7 +62,7 @@
 
     &__price{
         align-self: flex-end;
-        background-color: $color-grey;
+        background-color: $color-secondary;
         color: white;
         margin: 0 10px 10px 0;
         padding: 3px;

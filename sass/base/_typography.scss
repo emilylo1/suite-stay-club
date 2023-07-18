@@ -3,11 +3,11 @@ body{
     font-family: $font-main;
     font-weight: map-get($font-weight-main, light);
     color: black;
-    background-color: $color-secondary;
+    background-color: $color-background;
 }
 
 h1, h2{
-    font-family: $font-titles;
+    font-family: 'myfont';
     text-align: center;
 }
 

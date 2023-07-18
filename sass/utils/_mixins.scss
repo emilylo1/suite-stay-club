@@ -30,7 +30,7 @@
 }
 
 @mixin contact-icons{
-    background-color: $color-grey;
+    background-color: $color-secondary;
     color: white;
     border-radius: 50%;
     font-size: 18px;
@@ -48,7 +48,7 @@
     height: 32px;
     font-size: 18px;
     cursor: pointer;
-    background-color: $color-grey;
+    background-color: $color-secondary;
     text-align: center;
     line-height: 32px;
     margin-right: 5px;

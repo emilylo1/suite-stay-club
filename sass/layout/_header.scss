@@ -21,11 +21,11 @@ header{
         
         &>a{
             text-decoration: none;
-            color: $color-grey;
+            color: white;
         }
     }
 }
 
 #signup{
-    background-color: lightgray;
+    background-color: $color-tertiary;
 }
