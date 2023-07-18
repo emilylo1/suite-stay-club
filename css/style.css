@@ -67,7 +67,7 @@ h3, h4 {
   text-decoration: none;
 }
 
-.welcome-content__coming {
+.coming-soon__button {
   color: white;
   background-color: #9A7E28;
   padding: 10px 40px;
@@ -548,6 +548,23 @@ footer {
 .see-details {
   font-size: 12px;
   font-weight: 600;
+}
+
+.coming-soon {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.coming-soon__image {
+  width: 100%;
+  filter: brightness(80%);
+}
+
+.coming-soon-wrapper {
+  position: absolute;
+  top: 26%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */

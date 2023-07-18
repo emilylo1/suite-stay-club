@@ -1,0 +1,17 @@
+.coming-soon{
+    position: relative;
+    text-align: center;
+    color: white;
+
+    &__image{
+        width: 100%;
+        filter: brightness(80%);
+    }
+}
+
+.coming-soon-wrapper{
+    position: absolute;
+    top: 26%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
