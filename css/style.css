@@ -189,6 +189,11 @@ h3, h4 {
   font-size: 2rem;
 }
 
+#carousel-property {
+  flex-basis: 50%;
+  height: auto;
+}
+
 .arrow-back {
   color: #3F6064;
   background-color: white;
@@ -525,6 +530,7 @@ footer {
 }
 .included__heading {
   margin-bottom: 5px;
+  margin-top: 0;
 }
 .included__detail {
   margin: 0;
