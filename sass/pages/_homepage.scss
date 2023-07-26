@@ -2,6 +2,11 @@
     width: 100%;
     object-fit: cover;
     height: 40vh;
+    filter: brightness(80%);
+}
+
+#about{
+    width: 220px;
 }
 
 .welcome-content{
