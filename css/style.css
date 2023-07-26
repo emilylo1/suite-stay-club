@@ -337,6 +337,13 @@ footer {
   margin: auto;
   padding: 20px;
 }
+.hotel-cards-wrapper a {
+  text-decoration: none;
+  color: #524C4C;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 .cards {
   display: flex;

@@ -33,6 +33,12 @@
     width: 95%;
     margin: auto;
     padding: 20px;
+
+    & a{
+        text-decoration: none;
+        color: $color-secondary;
+        @include flex-basic (column);
+    }
 }
 
 .cards{
