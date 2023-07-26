@@ -5,13 +5,20 @@
 
     &__image{
         width: 100%;
-        filter: brightness(80%);
+        filter: brightness(70%);
+        height: 90vh;
+        object-fit: cover;
     }
 }
 
 .coming-soon-wrapper{
     position: absolute;
-    top: 26%;
+    top: 30%;
     right: 50%;
     transform: translate(50%, -50%);
+    font-size: 20px;
+
+    & img{
+        width: 250px;
+    }
 }
