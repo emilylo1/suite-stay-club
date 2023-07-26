@@ -64,3 +64,18 @@
   .carousel-button.next {
     right: 1rem;
   }
+
+.carousel-home{
+  height: 30vh;
+  position: relative;
+
+  & >ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+#btn-home-size{
+  font-size: 2rem;
+}

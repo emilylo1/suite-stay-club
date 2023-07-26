@@ -175,6 +175,20 @@ h3, h4 {
   right: 1rem;
 }
 
+.carousel-home {
+  height: 30vh;
+  position: relative;
+}
+.carousel-home > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#btn-home-size {
+  font-size: 2rem;
+}
+
 header {
   background-color: #3F6064;
   font-size: 12px;
