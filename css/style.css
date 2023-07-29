@@ -11,26 +11,24 @@ body {
   padding: 0;
 }
 
-@font-face {
-  font-family: "myfont";
-  src: local("Prestigious Regular"), local("Prestigious-Regular"), url("/font/Prestigious-Regular.woff2") format("woff2"), url("/font/Prestigious-Regular.woff") format("woff"), url("/font/Prestigious-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
 body {
   font-size: 15px;
   font-family: "poppins", sans-serif;
   font-weight: 300;
-  color: black;
+  color: #524C4C;
   background-color: #F5F5F5;
 }
 
 h1, h2 {
-  font-family: "myfont";
+  font-weight: 600;
   text-align: center;
 }
 
-h3, h4 {
+h3 {
+  font-weight: 300;
+}
+
+h4 {
   font-weight: 600;
 }
 
@@ -56,6 +54,20 @@ h3, h4 {
   background-color: #9A7E28;
   padding: 10px 40px;
   border: none;
+}
+
+.confirm-btn {
+  color: white;
+  background-color: #9A7E28;
+  padding: 10px 40px;
+  border: none;
+}
+
+.booking-calendar a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
 #form-wrapper__btn {
@@ -205,7 +217,6 @@ h3, h4 {
 }
 
 .wrapper i {
-  top: 50%;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -225,11 +236,11 @@ h3, h4 {
 }
 
 .wrapper i:first-child {
-  left: -22px;
+  left: 0px;
 }
 
 .wrapper i:last-child {
-  right: -22px;
+  right: 0px;
 }
 
 .wrapper .slider {
@@ -308,7 +319,6 @@ h3, h4 {
 }
 
 .wrapper2 i {
-  top: 50%;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -328,11 +338,11 @@ h3, h4 {
 }
 
 .wrapper2 i:first-child {
-  left: -22px;
+  left: 0px;
 }
 
 .wrapper2 i:last-child {
-  right: -22px;
+  right: 0px;
 }
 
 .wrapper2 .slider2 {
@@ -409,6 +419,98 @@ h3, h4 {
   font-size: 45px;
   position: absolute;
   left: 10px;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 80%;
+  background-color: #222227;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  margin: 20px;
+}
+
+.month {
+  width: 100%;
+  background-color: #9A7E28;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: 6.3142857143rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1rem;
+  margin: 0.3rem;
+  width: 5.7428571429rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #9A7E28;
 }
 
 header {
@@ -625,6 +727,9 @@ footer {
   width: 50%;
   padding: 20px;
 }
+.property-page__prices {
+  cursor: pointer;
+}
 
 .property-detail {
   display: flex;
@@ -665,6 +770,7 @@ footer {
   justify-content: center;
   font-size: 13px;
   padding: 10px;
+  background-color: #524C4C;
 }
 .hotel-highlights__more {
   margin-top: 0;
@@ -740,6 +846,14 @@ footer {
 }
 .included__detail {
   margin: 0;
+}
+
+#savings {
+  color: #9A7E28;
+}
+
+.calendar-text {
+  text-align: center;
 }
 
 .restaurants-and-activities {

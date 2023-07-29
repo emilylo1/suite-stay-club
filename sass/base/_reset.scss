@@ -10,13 +10,3 @@ body{
     margin: 0 auto;
     padding: 0;
 }
-
-@font-face {
-    font-family: 'myfont';
-    src: local('Prestigious Regular'), local('Prestigious-Regular'),
-        url('/font/Prestigious-Regular.woff2') format('woff2'),
-        url('/font/Prestigious-Regular.woff') format('woff'),
-        url('/font/Prestigious-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }

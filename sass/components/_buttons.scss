@@ -20,6 +20,17 @@
     }
 }
 
+.confirm-btn{
+    @include orange-btn;
+}
+
+.booking-calendar a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
 #form-wrapper__btn{
     @include orange-btn;
     margin: 10px 0 20px 0;

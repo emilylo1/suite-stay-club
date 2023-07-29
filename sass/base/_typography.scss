@@ -2,16 +2,20 @@ body{
     font-size: 15px;
     font-family: $font-main;
     font-weight: map-get($font-weight-main, light);
-    color: black;
+    color: $color-secondary;
     background-color: $color-background;
 }
 
 h1, h2{
-    font-family: 'myfont';
+    font-weight: map-get($font-weight-main, semi-bold);
     text-align: center;
 }
 
-h3, h4{
+h3{
+    font-weight: map-get($font-weight-main, light);
+}
+
+h4{
     font-weight: map-get($font-weight-main, semi-bold);
 }
 
