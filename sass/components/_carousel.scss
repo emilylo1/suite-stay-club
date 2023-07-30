@@ -133,7 +133,6 @@
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   gap: 16px;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -229,7 +228,6 @@
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   gap: 16px;
   scroll-behavior: smooth;
   scrollbar-width: none;

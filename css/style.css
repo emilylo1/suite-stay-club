@@ -61,6 +61,7 @@ h4 {
   background-color: #9A7E28;
   padding: 10px 40px;
   border: none;
+  cursor: pointer;
 }
 
 .booking-calendar a {
@@ -269,7 +270,6 @@ h4 {
   grid-auto-flow: column;
   grid-auto-columns: calc(33.3333333333% - 12px);
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   gap: 16px;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -370,7 +370,6 @@ h4 {
   grid-auto-flow: column;
   grid-auto-columns: calc(33.3333333333% - 12px);
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   gap: 16px;
   scroll-behavior: smooth;
   scrollbar-width: none;
