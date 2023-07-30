@@ -99,6 +99,16 @@ h4 {
   position: relative;
   margin: auto;
 }
+@media only screen and (max-width: 768px) {
+  .search {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .search {
+    width: 100%;
+  }
+}
 .search__term {
   width: 100%;
   border: 2px solid #524C4C;
@@ -555,6 +565,12 @@ footer {
   margin-top: 30px;
   padding: 20px;
 }
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .logo {
   width: 80px;
@@ -577,6 +593,37 @@ footer {
 
 .footer-center {
   flex-basis: 35%;
+}
+@media only screen and (max-width: 768px) {
+  .footer-center {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-center {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-center__address {
+    width: 32%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-center__phone {
+    width: 32%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-center__email {
+    width: 32%;
+  }
 }
 .footer-center i {
   background-color: #524C4C;
@@ -644,12 +691,24 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: center;
+}
+@media only screen and (max-width: 480px) {
+  .about-suite-stay-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 
 .icons-wrapper {
   padding: 20px;
   flex-basis: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .icons-wrapper {
+    flex-basis: 50%;
+  }
 }
 
 .hotel-cards-wrapper {
@@ -660,6 +719,16 @@ footer {
   width: 95%;
   margin: auto;
   padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .hotel-cards-wrapper {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hotel-cards-wrapper {
+    flex-direction: column;
+  }
 }
 .hotel-cards-wrapper a {
   text-decoration: none;
@@ -679,6 +748,16 @@ footer {
   margin-bottom: 10px;
   color: #524C4C;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 768px) {
+  .cards {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cards {
+    width: 100%;
+  }
 }
 .cards__img {
   width: 100%;

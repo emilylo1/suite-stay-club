@@ -5,6 +5,11 @@ footer{
     @include flex-basic (row);
     margin-top: 30px;
     padding: 20px;
+
+    @media only screen and (max-width: 768px){
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .logo{
@@ -33,6 +38,34 @@ footer{
 
 .footer-center{
     flex-basis: 35%;
+
+    @media only screen and (max-width: 768px){
+        @include flex-basic (row);
+        justify-content: center;
+    }
+
+    @media only screen and (max-width: 480px){
+        @include flex-basic (column);
+        align-items: center;
+    }
+
+    &__address{
+        @media only screen and (max-width: 480px){
+            width: 32%;
+        }
+    }
+
+    &__phone{
+        @media only screen and (max-width: 480px){
+            width: 32%;
+        }
+    }
+
+    &__email{
+        @media only screen and (max-width: 480px){
+            width: 32%;
+        }
+    }
 
     & i{
         @include contact-icons;
