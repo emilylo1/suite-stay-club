@@ -8,6 +8,10 @@
     &__img{
         width: 40%;
         margin: 10px;
+
+        @media only screen and (max-width: 768px){
+            width: 60%;
+        }
     }
 }
 
@@ -17,6 +21,10 @@
     align-items: center;
     background-color: $color-background;
     line-height: initial;
+
+    @media only screen and (max-width: 768px){
+        flex-direction: column;
+    }
 }
 
 .booking-details{
