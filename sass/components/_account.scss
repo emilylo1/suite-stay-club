@@ -1,0 +1,17 @@
+.account{
+    position: absolute;
+    right: 20px;
+    color: $color-primary;
+    font-size: 20px;
+
+    & i:nth-child(1){
+        background-color: white;
+        border-radius: 50%;
+        padding: 3px 5px;
+    }
+
+    & i:nth-child(2){
+        font-size: 15px;
+        color: white;
+    }
+}
