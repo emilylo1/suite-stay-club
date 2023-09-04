@@ -10,7 +10,7 @@
     @media only screen and (max-width: 768px){
         width: 100%;
         text-align: center;
-        padding: 0;
+        padding-bottom: 0;
     }
 
     &__prices{
@@ -27,7 +27,7 @@
     @media only screen and (max-width: 768px){
         width: 100%;
         text-align: center;
-        padding: 0;
+        padding: 0 20px;
     }
 }
 
@@ -59,7 +59,7 @@
         justify-content: center;
         font-size: 13px;
         padding: 10px;
-        background-color: $color-secondary;
+        border-radius: 10px;
 
         @media only screen and (max-width: 480px){
             flex-basis: 35%;
@@ -71,7 +71,7 @@
 
         & a{
             text-decoration: none;
-            color: black;
+            color: $color-primary;
             font-weight: map-get($font-weight-main, semi-bold);
         }
     }

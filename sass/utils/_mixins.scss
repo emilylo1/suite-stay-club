@@ -25,8 +25,8 @@
 
 @mixin highlight-boxes{
     color: white;
-    background-color: black;
-    border: solid 1px black;
+    background-color: $color-primary;
+    border: solid 1px $color-primary;
 }
 
 @mixin contact-icons{
