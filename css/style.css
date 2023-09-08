@@ -444,7 +444,7 @@ h4 {
   padding: 3px 5px;
   font-size: 30px;
   position: absolute;
-  left: 8px;
+  left: 100px;
 }
 
 .container {
@@ -624,10 +624,9 @@ h4 {
 }
 
 .account {
-  position: absolute;
-  right: 20px;
   color: #3F6064;
   font-size: 20px;
+  width: 80px;
 }
 .account i:nth-child(1) {
   background-color: white;
@@ -639,38 +638,145 @@ h4 {
   color: white;
 }
 
-header {
-  background-color: #3F6064;
-  font-size: 12px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: row;
+#signup {
+  background-color: #9A7E28;
+  border-radius: 10px;
 }
-header img {
-  margin-right: 30px;
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3F6064;
+  height: 100%;
+  padding: 1em;
+  font-size: 12px;
+}
+
+.menu li:hover {
+  color: blue;
+  cursor: pointer;
 }
 
 .menu {
-  list-style: none;
   display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 .menu li {
+  margin: 0 0.5rem;
+  overflow: hidden;
   padding: 10px 30px;
+}
+@media only screen and (max-width: 1040px) {
+  .menu li {
+    padding: 5px;
+  }
 }
 .menu li > a {
   text-decoration: none;
   color: white;
 }
 
-#signup {
-  background-color: #9A7E28;
-  border-radius: 10px;
+/*Container for menu button  */
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#menu-toggle {
+  display: none;
+}
+
+/*  Creating the menu button */
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 5px;
+  width: 32px;
+  border-radius: 3px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+/*  Adding Functionality to the Hamburger Menu with CSS  */
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  /*  transforms the hamburger icon into a cross  */
+  transform: rotate(-45deg);
+}
+
+/* Making the navbar responsive by CSS Media Queries */
+@media (max-width: 768px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: 10em;
+    padding: 0.5em;
+    background-color: #3F6064;
+    border-radius: 0;
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: black;
+    background-color: #E8E8E8;
+    font-size: 15px;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
 footer {
   background-color: #3F6064;
   font-size: 12px;
