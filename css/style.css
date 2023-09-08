@@ -627,6 +627,7 @@ h4 {
   color: #3F6064;
   font-size: 20px;
   width: 80px;
+  cursor: pointer;
 }
 .account i:nth-child(1) {
   background-color: white;
