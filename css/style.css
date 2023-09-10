@@ -436,6 +436,18 @@ h4 {
     grid-auto-columns: 100%;
   }
 }
+.main-carousel {
+  height: 50vh;
+}
+.main-carousel img {
+  margin-left: 10px;
+  height: 50vh;
+}
+
+.flickity-page-dots {
+  bottom: 0px !important;
+}
+
 .arrow-back {
   color: #3F6064;
   background-color: white;

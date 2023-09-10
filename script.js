@@ -235,3 +235,19 @@ carousel2.addEventListener("mousedown", dragStart2);
 carousel2.addEventListener("mousemove", dragging2);
 document.addEventListener("mouseup", dragStop2);
 carousel2.addEventListener("scroll", infiniteScroll2);
+
+
+
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
+});
