@@ -21,16 +21,16 @@ body {
 }
 
 h1, h2 {
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h4 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .bold {
@@ -46,6 +46,9 @@ h4 {
   cursor: pointer;
   border-radius: 10px;
 }
+.welcome-content__button:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
 
 #waitlist {
   padding: 9px 142px;
@@ -58,6 +61,9 @@ h4 {
   border: none;
   border-radius: 10px;
 }
+.property-page__prices:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
 
 .confirm-btn {
   color: white;
@@ -66,6 +72,9 @@ h4 {
   border: none;
   cursor: pointer;
   border-radius: 10px;
+}
+.confirm-btn:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .booking-calendar a {
@@ -84,6 +93,9 @@ h4 {
   text-decoration: none;
   border-radius: 10px;
 }
+#form-wrapper__btn:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
 
 .coming-soon__button {
   color: white;
@@ -94,6 +106,9 @@ h4 {
   margin: auto;
   padding: 10px 150px;
   border-radius: 10px;
+}
+.coming-soon__button:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .search-container {
@@ -135,6 +150,9 @@ h4 {
   color: white;
   border: 2px solid #524C4C;
   width: 10%;
+}
+.search__button:hover {
+  background-color: #3F6064;
 }
 
 .carousel {
@@ -448,6 +466,10 @@ h4 {
   bottom: 0px !important;
 }
 
+.carousel.cell {
+  counter-increment: carousel-cell;
+}
+
 .arrow-back {
   color: #3F6064;
   background-color: white;
@@ -457,6 +479,9 @@ h4 {
   font-size: 30px;
   position: absolute;
   left: 100px;
+}
+.arrow-back:hover {
+  box-shadow: 0px 0px 4px #fff;
 }
 
 .container {
@@ -646,9 +671,15 @@ h4 {
   border-radius: 50%;
   padding: 3px 5px;
 }
+.account i:nth-child(1):hover {
+  box-shadow: 0px 0px 4px #fff;
+}
 .account i:nth-child(2) {
   font-size: 15px;
   color: white;
+}
+.account i:nth-child(2):hover {
+  box-shadow: 0px 0px 4px #fff;
 }
 
 #signup {
@@ -665,11 +696,6 @@ header {
   height: 100%;
   padding: 1em;
   font-size: 12px;
-}
-
-.menu li:hover {
-  color: blue;
-  cursor: pointer;
 }
 
 .menu {
@@ -692,6 +718,10 @@ header {
 .menu li > a {
   text-decoration: none;
   color: white;
+  position: relative;
+}
+.menu li > a:hover {
+  border-bottom: 1px solid white;
 }
 
 /*Container for menu button  */
@@ -821,6 +851,9 @@ footer {
   padding-right: 5px;
   padding-left: 5px;
 }
+.footer-left__links a:hover {
+  border-bottom: 1px solid white;
+}
 .footer-left__copyright {
   padding-left: 5px;
   margin-top: 20px;
@@ -886,10 +919,10 @@ footer {
 .footer-right__about span {
   display: block;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .footer-right__icons {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .footer-right__icons a {
   color: white;
@@ -902,6 +935,9 @@ footer {
   line-height: 32px;
   margin-right: 5px;
   display: inline-block;
+}
+.footer-right__icons a:hover {
+  box-shadow: 2px 2px 4px #fff;
 }
 
 .homepage-hero-image {
@@ -985,6 +1021,9 @@ footer {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
+.cards:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
 @media only screen and (max-width: 768px) {
   .cards {
     width: 100%;
@@ -1053,6 +1092,19 @@ footer {
 .property-page__prices {
   cursor: pointer;
 }
+.property-page__address {
+  margin-bottom: 0;
+}
+.property-page__map {
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #524C4C;
+  font-weight: 600;
+}
+.property-page__map:hover {
+  border-bottom: 1px solid #524C4C;
+}
 
 .property-detail {
   display: flex;
@@ -1120,6 +1172,9 @@ footer {
   color: #3F6064;
   font-weight: 600;
 }
+.hotel-highlights__more a:hover {
+  border-bottom: 1px solid #3F6064;
+}
 
 #property-page-video {
   display: flex;
@@ -1162,6 +1217,9 @@ footer {
   color: black;
   font-weight: 600;
   font-size: 12px;
+}
+.details__link:hover {
+  border-bottom: 1px solid black;
 }
 
 .included-wrapper {
@@ -1265,6 +1323,9 @@ footer {
   font-size: 12px;
   font-weight: 600;
 }
+.destination-and-location a:hover {
+  border-bottom: 1px solid black;
+}
 
 .body-main {
   background-color: white;
@@ -1312,6 +1373,9 @@ footer {
   text-decoration: none;
   color: black;
   font-weight: 600;
+}
+.confirmation-help a:hover {
+  border-bottom: 1px solid black;
 }
 
 .form {

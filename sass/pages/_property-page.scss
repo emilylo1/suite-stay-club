@@ -16,6 +16,21 @@
     &__prices{
         cursor: pointer;
     }
+
+    &__address{
+        margin-bottom: 0;
+    }
+
+    &__map{
+        padding: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        color: $color-secondary;
+        font-weight: map-get($font-weight-main, semi-bold);
+        &:hover{
+            border-bottom: 1px solid $color-secondary;
+        }
+    }
 }
 
 .property-detail{
@@ -73,6 +88,9 @@
             text-decoration: none;
             color: $color-primary;
             font-weight: map-get($font-weight-main, semi-bold);
+            &:hover{
+                border-bottom: 1px solid $color-primary;
+            }
         }
     }
 }
@@ -114,6 +132,9 @@
         color: black;
         font-weight: map-get($font-weight-main, semi-bold);
         font-size: 12px;
+        &:hover{
+            border-bottom: 1px solid black;
+        }
     }
 }
 
@@ -211,5 +232,8 @@
         color: black;
         font-size: 12px;
         font-weight: map-get($font-weight-main, semi-bold);
+        &:hover{
+            border-bottom: 1px solid black;
+        }
     }
 }

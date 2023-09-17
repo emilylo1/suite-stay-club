@@ -7,16 +7,16 @@ body{
 }
 
 h1, h2{
-    font-weight: map-get($font-weight-main, semi-bold);
+    font-weight: map-get($font-weight-main, lighter-bold);
     text-align: center;
 }
 
 h3{
-    font-weight: map-get($font-weight-main, semi-bold);
+    font-weight: map-get($font-weight-main, lighter-bold);
 }
 
 h4{
-    font-weight: map-get($font-weight-main, semi-bold);
+    font-weight: map-get($font-weight-main, lighter-bold);
 }
 
 .bold{

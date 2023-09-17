@@ -27,6 +27,9 @@ footer{
             border-right: solid 1px white;
             padding-right: 5px;
             padding-left: 5px;
+            &:hover{
+                border-bottom: 1px solid white;
+            }
         }
     }
 
@@ -87,14 +90,17 @@ footer{
     &__about span{
         display: block;
         font-weight: map-get($font-weight-main, semi-bold);
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     &__icons{
-        margin-top: 25px;
+        margin-top: 10px;
         
         & a{
             @include social-icons;
+            &:hover{
+                box-shadow: 2px 2px 4px #fff;
+            }
         }
     }
 }

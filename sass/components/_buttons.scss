@@ -8,6 +8,9 @@
         padding: 10px 50px;
         cursor: pointer;
         border-radius: 10px;
+        &:hover{
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        }
     }
 }
 
@@ -19,6 +22,8 @@
     &__prices{
        @include orange-btn; 
        border-radius: 10px;
+       &:hover{box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
     }
 }
 
@@ -26,6 +31,9 @@
     @include orange-btn;
     cursor: pointer;
     border-radius: 10px;
+    &:hover{
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
 }
 
 .booking-calendar a{
@@ -40,6 +48,9 @@
     margin: 10px 0 20px 0;
     text-decoration: none;
     border-radius: 10px;
+    &:hover{
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
 }
 
 .coming-soon__button{
@@ -48,4 +59,7 @@
     margin: auto;
     padding: 10px 150px;
     border-radius: 10px;
+    &:hover{
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    }
 }

@@ -40,6 +40,9 @@
         text-decoration: none;
         color: black;
         font-weight: map-get($font-weight-main, semi-bold);
+        &:hover{
+            border-bottom: 1px solid black;
+        }
     }
 }
 
