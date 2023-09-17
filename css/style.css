@@ -1043,13 +1043,13 @@ footer {
   margin: 10px 0 0 10px;
 }
 .cards__hotel {
-  flex: 45%;
-  margin: 10px 0 10px 10px;
+  flex: 40%;
+  margin: 10px 5px 10px 10px;
 }
 .cards__capacity {
   flex: 45%;
   text-align: end;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px 5px;
 }
 .cards__price {
   align-self: flex-end;
