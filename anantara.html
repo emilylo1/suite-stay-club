@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head>
 
@@ -60,55 +61,7 @@
             </div>
 
             <script src="/path/to/flickity.pkgd.min.js"></script>
-            <!---
-            <section>
-                <div class="carousel" data-carousel>
-                  <button class="carousel-button prev" data-carousel-button="prev"><</button>
-                  <button class="carousel-button next" data-carousel-button="next">></button>
-                  <ul data-slides>
-                    <li class="slide" data-active>
-                      <img src="images/antantara-hotel/Anantara hotel imagery/anantara_the_palm_dubai_the_beach_1920x1037.jpg" alt="Nature Image #1">
-                    </li>
-                    <li class="slide">
-                      <img src="images/antantara-hotel/Anantara hotel imagery/anantara_the_palm_dubai_main_pool_bar_1920x1037.jpg" alt="Nature Image #2">
-                    </li>
-                    <li class="slide">
-                      <img src="images/antantara-hotel/Anantara hotel imagery/anantara_the_palm_dubai_the_beach_house_new02_2019_1920x1037.jpg" alt="Nature Image #3">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/anantara_the_palm_dubai_the_beach_house_new03_2019_1920x1037.jpg" alt="Nature Image #3">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/anantara_the_palm_dubai_the_beach_house_new04_2019_1920x1037.jpg" alt="Nature Image #1">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/anantara_the_palm_dubai_treatment_room_1920x1037.jpg" alt="Nature Image #2">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/anantara-the-palm-dubai--resort---kayak-guru---mai-bar---lifestyle---03---1920x1037.jpg" alt="Nature Image #3">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/anantara-the-palm-dubai-resort_anantara-spa_couple_treatment_room_1920x1037.jpg" alt="Nature Image #3">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/anantara-the-palm-dubai-resort---aerial-view-east---1---1920x1037.jpg" alt="Nature Image #2">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/anantara-the-palm-dubai-resort---sunset-dining---evening---1920x1037.jpg" alt="Nature Image #3">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/ezgif.com-webp-to-jpg (1).jpg" alt="Nature Image #3">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/ezgif.com-webp-to-jpg (2).jpg" alt="Nature Image #3">
-                    </li>
-                    <li class="slide">
-                        <img src="images/antantara-hotel/Anantara hotel imagery/ezgif.com-webp-to-jpg.jpg" alt="Nature Image #3">
-                    </li>
-                  </ul>
-                </div>
-            </section>
-        -->
+            
             <section class="property-page-wrapper">
                 <section class="property-page">
                     <h1 class="property-page__hotel">Anantara The Palm | Dubai 5*</h1>
@@ -258,71 +211,76 @@
             <section id="view-more" class="restaurants-and-activities">
                 <h2>Hotel's restaurants and bars</h2>
 
-                <div class="wrapper">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
-                    <ul class="slider">
-                      <li class="card">
-                        <div class="img"><img src="images/antantara-hotel/awid_restaurant_qamar_terrace-view_960x520.webp" alt="img" draggable="false"></div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/awid_restaurant_qamar_terrace-view_960x520.webp"/>
                         <h3>Qamar</h3>
-                      </li>
-                      <li class="card">
-                        <div class="img"><img src="images/antantara-hotel/Bushmans.jpg" alt="img" draggable="false"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/Bushmans.jpg"/>
                         <h3>Bushman's</h3>
-                      </li>
-                      <li class="card">
-                        <div class="img"><img src="images/antantara-hotel/Lotus Lounge.jpg" alt="img" draggable="false"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/Lotus Lounge.jpg"/>
                         <h3>Lotus Lounge</h3>
-                      </li>
-                      <li class="card">
-                        <div class="img"><img src="images/antantara-hotel/mai-bar.webp" alt="img" draggable="false"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/mai-bar.webp"/>
                         <h3>Mai Bar</h3>
-                      </li>
-                      <li class="card">
-                        <div class="img"><img src="images/antantara-hotel/Mekong.jpg" alt="img" draggable="false"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/Mekong.jpg"/>
                         <h3>Mekong</h3>
-                      </li>
-                      <li class="card">
-                        <div class="img"><img src="images/antantara-hotel/revo-cafe.webp" alt="img" draggable="false"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/revo-cafe.webp"/>
                         <h3>Revo Cafe</h3>
-                      </li>
-                    </ul>
-                    <i id="right" class="fa-solid fa-angle-right"></i>
-                </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  
             </section>
 
             <section class="restaurants-and-activities">
                 <h2>Leisure & activities</h2>
 
-                <div class="wrapper2">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
-                    <ul class="slider2">
-                      <li class="card2">
-                        <div class="img2"><img src="images/antantara-hotel/Kids club.jpg" alt="img" draggable="false"></div>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/Kids club.jpg"/>
                         <h3>Kids Club</h3>
-                      </li>
-                      <li class="card2">
-                        <div class="img2"><img src="images/antantara-hotel/Pool & jacuzzi.jpg" alt="img" draggable="false"></div>
-                        <h3>Pool & Jacuzzi</h3>
-                      </li>
-                      <li class="card2">
-                        <div class="img2"><img src="images/antantara-hotel/Water sports.jpg" alt="img" draggable="false"></div>
-                        <h3>Water Sports</h3>
-                      </li>
-                      <li class="card2">
-                        <div class="img2"><img src="images/antantara-hotel/gym.jpg" alt="img" draggable="false"></div>
-                        <h3>Gym</h3>
-                      </li>
-                      <li class="card2">
-                        <div class="img2"><img src="images/antantara-hotel/Deep Dive Dubai.PNG" alt="img" draggable="false"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/Deep Dive Dubai.PNG"/>
                         <h3>Deep Dive Dubai</h3>
-                      </li>
-                      <li class="card2">
-                        <div class="img2"><img src="images/antantara-hotel/Personal training.PNG" alt="img" draggable="false"></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/gym.jpg"/>
+                        <h3>Gym</h3>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/Personal training.PNG"/>
                         <h3>Personal Training</h3>
-                      </li>
-                    </ul>
-                    <i id="right" class="fa-solid fa-angle-right"></i>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/Pool & jacuzzi.jpg"/>
+                        <h3>Pool & Jacuzzi</h3>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/antantara-hotel/Water sports.jpg"/>
+                        <h3>Water Sports</h3>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                   </div>
+                
+                  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
             </section>
 
             <section class="destination-and-location">
