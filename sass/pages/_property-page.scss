@@ -149,7 +149,7 @@
     }
 }
 
-.swiper{
+#swiper3{
     flex-basis: 50%;
 
     @media only screen and (max-width: 768px){
@@ -185,6 +185,7 @@
 
 #savings{
     color: $color-tertiary;
+    margin: 20px;
 }
 
 .calendar-text{

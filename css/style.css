@@ -155,120 +155,6 @@ h4 {
   background-color: #3F6064;
 }
 
-.carousel {
-  width: 100%;
-  height: 50vh;
-  position: relative;
-}
-@media only screen and (max-width: 480px) {
-  .carousel {
-    height: 30vh;
-  }
-}
-
-.carousel > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
-}
-
-.slide > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 5px 5px 0 0;
-}
-
-.slide[data-active] {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0ms;
-}
-
-.carousel-button {
-  position: absolute;
-  z-index: 2;
-  background: none;
-  border: none;
-  font-size: 4rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  border-radius: 0.25rem;
-  padding: 0 0.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.carousel-button:hover,
-.carousel-button:focus {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.carousel-button:focus {
-  outline: 1px solid transparent;
-}
-
-.carousel-button.prev {
-  left: 1rem;
-}
-
-.carousel-button.next {
-  right: 1rem;
-}
-
-.carousel-home {
-  height: 35vh;
-  position: relative;
-}
-.carousel-home > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#btn-home-size {
-  font-size: 2rem;
-}
-
-#carousel-property {
-  flex-basis: 50%;
-  height: 50vh;
-}
-@media only screen and (max-width: 768px) {
-  #carousel-property {
-    flex-basis: 100%;
-    height: 40vh;
-  }
-}
-
-.main-carousel {
-  height: 50vh;
-}
-.main-carousel img {
-  margin-left: 10px;
-  height: 50vh;
-}
-
-.flickity-page-dots {
-  bottom: 0px !important;
-}
-
-.carousel.cell {
-  counter-increment: carousel-cell;
-}
-
 :root {
   --swiper-navigation-color: white !important;
   --swiper-theme-color: white !important;
@@ -300,6 +186,27 @@ h4 {
 
 #swiper-button-next2, #swiper-button-prev2 {
   top: 40% !important;
+}
+
+#swiper-cards {
+  height: 35vh;
+  width: 100%;
+}
+
+.main-carousel {
+  height: 50vh;
+}
+.main-carousel img {
+  margin-left: 10px;
+  height: 50vh;
+}
+
+.flickity-page-dots {
+  bottom: 0px !important;
+}
+
+.carousel.cell {
+  counter-increment: carousel-cell;
 }
 
 .arrow-back {
@@ -1073,11 +980,11 @@ footer {
   }
 }
 
-.swiper {
+#swiper3 {
   flex-basis: 50%;
 }
 @media only screen and (max-width: 768px) {
-  .swiper {
+  #swiper3 {
     flex-basis: 100%;
   }
 }
@@ -1113,6 +1020,7 @@ footer {
 
 #savings {
   color: #9A7E28;
+  margin: 20px;
 }
 
 .calendar-text {
